@@ -1,0 +1,12 @@
+<!--
+Author: Karson Chau
+Created: Nov 13,2017
+-->
+<div class="text-center search" ng-controller="searchController">
+   <h1 class="text-center">Search Restaurants</h1>
+   <div class="form">
+      <input type="text" ng-model="city" placeholder="city"/></label>
+      <button ng-click="search()" class="btn btn-success search-button">Search</button>
+   </div>
+   <p class="search-error">{{inputError}}</p>
+</div>

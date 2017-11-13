@@ -1,0 +1,10 @@
+<!--
+Author: Karson Chau
+Created: Nov 13,2017
+-->
+<div ng-controller="cityController" ng-init="getCities()" class="text-center">
+   <h1 class="cityTitle">{{resultTitle}}</h1>
+      <div class="city-list"ng-repeat="city in cities">
+         <p>{{city.name}} {{city.country_name}} <button class="btn btn-primary" ng-click="selectCity($index)">Select</button></p>
+      </div>
+</div>

@@ -1,0 +1,130 @@
+/*
+   Author: Karson Chau
+   Created: Nov 13,2017
+*/
+
+body {
+   background-color: lightgrey;
+}
+
+h1 {
+   margin-top: 100px;
+   font-weight: 700;
+   font-size: 4em;
+}
+p {
+   color: black;
+}
+
+.form {
+   margin-top: 4%;
+}
+
+.form input {
+   width: 400px;
+}
+
+.search-button {
+   margin-left: 10px;
+}
+
+.search-error {
+   margin-top: 20px;
+   font-size: 20px;
+}
+
+.cityTitle {
+   text-transform: capitalize;
+}
+.city-list {
+   margin-top: 4%;
+}
+
+.btn {
+   margin-left: 10px;
+}
+
+.card {
+   margin: 50px auto 20px auto;
+   width: 50%;
+   background-color: white;
+
+   border-radius: 5px;
+}
+.card-img {
+   display: inline-block;
+   height: 200px;
+   margin: 15px auto 0px auto;
+   vertical-align: middle;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+}
+.img-responsive {
+   max-width: 100%;
+}
+
+
+.card-name {
+   color: #cb202d;
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.card-locality {
+   text-transform: uppercase;
+   color: black;
+}
+
+.card-address {
+   text-transform: uppercase;
+   color: grey;
+}
+
+.rating {
+   padding-top: 20px;
+   padding-right: 40px;
+}
+.card-rating {
+   display: inline-block;
+   width: 50px;
+   background-color: green;
+   color: white;
+   font-weight: 700;
+   font-size: 25px;
+   text-align: center;
+   border-radius: 5px;
+   margin-bottom: 0;
+   padding: 0;
+}
+
+.card-votes {
+   padding: 0;
+   margin-top: 3px;
+}
+.card-line {
+   width: 95%;
+   height: 3px;
+   color: lightgrey;
+}
+
+.card-head {
+   text-transform: uppercase;
+   margin-left: 35px;
+   color: grey;
+}
+
+.card-info {
+   margin-left: 20px;
+   color: black;
+   text-transform: capitalize;
+}
+
+.card-button {
+   margin-left: 20px;
+}
+
+.btn-default {
+   margin-left: 50px;
+   margin-bottom: 10px;
+}

@@ -1,0 +1,46 @@
+<!--
+   Author: Karson Chau
+   Created: Nov 13,2017
+-->
+<div ng-controller="restaurantController">
+   <h1 class="text-center">List of Restaurants in {{cityName}}</h1>
+      <div ng-repeat="restaurant in restaurants" class="text-center">
+         <div class="card">
+            <div class="row">
+               <div class="col-md-4">
+                  <img ng-src="{{restaurant.restaurant.thumb}}" class="img-responsive card-img" src="images/no_image_available.jpeg" alt="">
+               </div>
+               <div class="col-md-6 text-left">
+                  <h3 class="card-name">{{restaurant.restaurant.name}}</h3>
+                  <p class="card-locality">{{restaurant.restaurant.location.locality}}</p>
+                  <p class="card-address">{{restaurant.restaurant.location.address}}</p>
+               </div>
+                  <div class="col-md-2 text-right rating">
+                     <p class="card-rating">{{restaurant.restaurant.user_rating.aggregate_rating}}</p>
+                     <p class="card-votes">{{restaurant.restaurant.user_rating.votes}} votes</p>
+                  </div>
+            </div>
+
+            <hr class="card-line">
+
+            <div class="row text-left">
+               <div class="col-md-12">
+                  <p class="card-head">
+                     Cusines:
+                     <span class="card-info">{{restaurant.restaurant.cuisines}}</span>
+                  </p>
+               </div>
+               <div class="col-md-12">
+                  <p class="card-head">
+                     Cost for two:
+                     <span class="card-info">{{restaurant.restaurant.currency}}{{restaurant.restaurant.average_cost_for_two}}</span>
+                  </p>
+               </div
+                  <div class="col-md-12 text-center">
+                     <a href="{{restaurant.restaurant.url}}" target="_blank" class="btn btn-default">Open Zomato</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+</div>
